@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Difference between Http 1.1 VS Http 2</title>
+    </head>
+    <body>
+        <h1>HTTP 1.1 VS HTTP 2.0</h1>
+        HTTP stands for Hyper Text Transfer Protocol. The communication between the client and server happens in a way that client send a request to the server and server acknowledging it and finally server responds back to the client. All these communication happens using http protocol. 
+
+Following we will be discussing about the difference between http 1.1 and http 2. 
+
+<h2>Multiplexing:</h2>
+
+   Multiplexing is a technique used to combine and send the multiple data streams over a single medium.<br>
+
+   <h4>HTTP/1.1:</h4> Does not support Multiplexing. Uses multiple connections to download resources in parallel, which can lead to inefficient resource and slow down the performance.<br> 
+
+   <h4>HTTP/2:</h4> Supports multiplexing of requests and responses within a single TCP connection. This allows multiple requests and responses to be sent and received concurrently, which lead to improved efficiency and reduced latency.
+
+
+
+<h2>Protocol:</h2> 
+
+<h4>HTTP/1.1:</h4> Text-based protocol where headers and data are in plain text.<br>
+
+<h4>HTTP/2:</h4> Binary protocol where headers are compressed and data is binary-encoded (0 and 1). This reduces overhead and speeds up data transfer.
+
+
+
+<h2> Compression:</h2>
+
+<h4>HTTP/1.1:</h4> Headers are not compressed, which can lead to redundant data transmission and increased latency.<br>
+
+<h4>HTTP/2:</h4> Headers are compressed using HPACK compression, reducing overhead and improving efficiency.
+
+
+
+<h2>Server Push:</h2>
+
+<h4>HTTP/1.1:</h4> Server cannot push responses proactively to the client.<br>
+
+<h4>HTTP/2:</h4> Server push allows servers to send multiple responses for a single client request, improving page load times by pushing resources the client will need before it asks for them.
+
+
+
+<h2>Prioritization:</h2>
+prioritization refers to the order in which pieces of content are loaded. Suppose a user visits a news website and navigates to an article. Should the photo at the top of the article load first? Should the text of the article load first? Should the banner ads load first? <br>
+
+<h4>HTTP/1.1:</h4> Lacks explicit prioritization mechanisms, so all requests are treated equally.<br>
+
+<h4>HTTP/2:</h4> Supports request prioritization, allowing clients to indicate the importance of individual requests. This ensures critical resources are fetched first, enhancing user experience.
+
+
+
+<h2>Compatibility:</h2>
+
+<h4>HTTP/1.1:</h4> Widely supported and compatible with virtually all browsers and servers.<br>
+
+<h4>HTTP/2:</h4> Becoming more widely supported but may require additional server configuration to enable
+    </body>
+</html>
